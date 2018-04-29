@@ -1,0 +1,15 @@
+CONFIG GET * ==>To get all config detials
+
+Redis Support 5 Types of data types
+1)String
+SET name "Rishav"
+GET name
+
+2)Hashes
+HMSET stu1 username Rishav pass omsairam
+hget stu1 username
+hgetall stu-1
+
+3)Lists
+lpush tutoriallist redis
+lpush tutuoriallist mongodb
