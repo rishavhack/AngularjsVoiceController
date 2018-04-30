@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Web Speech API Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdn.pubnub.com/pubnub-3.15.1.min.js"></script>
+    <script src="https://cdn.pubnub.com/sdk/pubnub-angular/pubnub-angular-3.2.1.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container" ng-app="PubNubAngularApp" ng-controller="MySpeechCtrl">
+      <div>
+        <textarea id="item1" ng-model="obj.theText" rows="4" cols="40" class="form-control"></textarea>
+        <textarea id="item3" ng-model="obj.theText1" rows="4" cols="40" class="form-control"></textarea>
+        <textarea id="item4" ng-model="obj.theText2" rows="4" cols="40" class="form-control"></textarea>
+      </div>
+  <button class="btn btn-primary" type="submit" ng-click="dictateIt()" value="Dictate it!" >Dictate it!</button>
+</div>
+  </body>
+</html>
